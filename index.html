@@ -31,9 +31,13 @@ p {
 }
 
 .content {
-  padding: px;
-  margin: 10px;
-height: 1800px;
+
+  margin: 0 auto;
+    max-width:100%;
+    width:800px;
+    height:1800px;
+
+  
 }
 
 .sticky {
@@ -46,6 +50,19 @@ height: 1800px;
 .sticky + .content {
   padding-top: 55px;
 }
+@media only screen and (max-width: 992px) {
+      .content{
+        width: 85%;
+        height:undefinedpx;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+       .content{
+        width: 100%;
+        height:undefinedpx;
+      }
+    }
+
 </style>
 </head>
 <body>
