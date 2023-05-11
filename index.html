@@ -1,106 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      padding: 0px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-body {
-  padding: 0px;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-h2 {
-  font-size: 20px;
-  margin: 5px 10px;
-}
-p {
-  font-size: 10px;
-  margin: 5px 15px;
-}
+    h2 {
+      font-size: 20px;
+      margin: 5px 10px;
+    }
 
-.top-container {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
+    p {
+      font-size: 10px;
+      margin: 5px 15px;
+    }
 
-.header {
-  padding: 1px 25%;
-  background: #0e87cc;
-  color: #f1f1f1;
-}
+    .top-container {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
 
-.content {
+    .header {
+      padding: 1px 10px;
+      background: #0e87cc;
+      color: #f1f1f1;
+    }
 
-  margin: 0 auto;
-    max-width:100%;
-    width:800px;
-    height:1800px;
+    .content {
+      padding-top: 20px;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 800px;
+      height: 1800px;
 
-  
-}
 
-.sticky {
-  padding: 0px 55px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+    }
 
-.sticky + .content {
-  padding-top: 55px;
-}
-@media only screen and (max-width: 992px) {
-      .content{
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky+.content {
+      padding-top: 76px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .content {
         width: 85%;
-        height:undefinedpx;
-      }
-    }
-    @media only screen and (max-width: 600px) {
-       .content{
-        width: 100%;
-        height:undefinedpx;
+        height: undefinedpx;
       }
     }
 
-</style>
+    @media only screen and (max-width: 600px) {
+      .content {
+        width: 98%;
+        height: undefinedpx;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="top-container">
-  <a href="https://drive.google.com/drive/folders/0B__nLF-iUdQrZGR6NGI4VkZZaGM?resourcekey=0-p1g1iESK1I6YWuztg5UmSg&amp;usp=sharing"><h2>Pool Documents</h2></a>
-  <p></p>
-</div>
+  <div class="top-container">
+    <a
+      href="https://drive.google.com/drive/folders/0B__nLF-iUdQrZGR6NGI4VkZZaGM?resourcekey=0-p1g1iESK1I6YWuztg5UmSg&amp;usp=sharing">
+      <h2>Pool Documents</h2>
+    </a>
+    <p></p>
+  </div>
 
-<div class="header" id="myHeader">
+  <div class="header" id="myHeader">
     <h2>Tierra Del Sol</h2>
     <p>Private Comunity Pool</p>
-</div>
+  </div>
 
-<div class="content">
-  <iframe style="width:100%;height:20%;border:1px solid #777"
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&title=Cleaning%20%26%20Reserved&src=Y19mZjdkMjEyM2RhZGI3YmJhYmJmMTE3ZWJjZDQ2NWZiMTVhZDJiZmJjODliZTIzMjk5MzdmZjk0NWQ3MTJiOTMzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19sZTVkY3Rla2FuZm5xM2ZoamR2cjhic3I3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%23D50000"
-            scrolling="no">This browser does not support Iframe</iframe><br>
-        <iframe style="width:100%;height:2000px;border:1px solid #777" src="https://calendly.com/tierradelsol-1/3hours"
-            scrolling="no">This browser does not support Iframe</iframe>
-           
-            <div class="inside">
-            
+  <div class="content">
+    <iframe style="width:100%;height:20%;border:1px solid #777"
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&title=Cleaning%20%26%20Reserved&src=Y19mZjdkMjEyM2RhZGI3YmJhYmJmMTE3ZWJjZDQ2NWZiMTVhZDJiZmJjODliZTIzMjk5MzdmZjk0NWQ3MTJiOTMzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19sZTVkY3Rla2FuZm5xM2ZoamR2cjhic3I3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%23D50000"
+      scrolling="no">This browser does not support Iframe</iframe><br>
+    <iframe style="width:100%;height:2000px;border:1px solid #777" src="https://calendly.com/tierradelsol-1/3hours"
+      scrolling="no">This browser does not support Iframe</iframe>
 
-<script>
-window.onscroll = function() {myFunction()};
+    <div class="inside">
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
+      <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+      </script>
 
 </body>
+
 </html>
